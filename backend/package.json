@@ -1,0 +1,9 @@
+{
+  "name": "Roadmap backend",
+  "version": "1.0.0",
+  "description": "nodejs backend for roadmap project",
+  "main": "server.js",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
