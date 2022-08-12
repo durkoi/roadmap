@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 export class ItemService {
 
   //private url: string = '/assets/data/items.json'
-  private url: string = 'http://localhost:3000/';
+  private url: string = 'http://localhost:3000/rethy';
   constructor(private http: HttpClient) {
   }
 
