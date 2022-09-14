@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ItemService} from "../services/item.service";
+import {IItem} from "../model/IItem";
 
 @Component({
   selector: 'app-item-create',
@@ -16,8 +17,10 @@ export class ItemCreateComponent implements OnInit {
   }
 
   createItem(): void {
-    console.log("add button clicked!");
-    this.itemService.addItem({id: 9, name: "z", description: "zz"});
+    //console.log("add button clicked!");
+    const itemToAdd: IItem = {id: 9, name: "z", description: "zz"};
 
+    this.itemService.addItem(itemToAdd).subscribe();
+    //console.log(itemToAdd);
   }
 }

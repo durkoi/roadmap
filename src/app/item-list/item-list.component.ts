@@ -20,4 +20,9 @@ export class ItemListComponent implements OnInit {
     this.itemService.listItems().subscribe(data => this.items = data);
   }
 
+  deleteItem(item: IItem) {
+    this.itemService.deleteItem(item).subscribe();
+    this.ngOnInit();
+  }
+
 }
